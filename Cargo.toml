@@ -1,0 +1,19 @@
+[package]
+name = "todo-list"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.13", features = ["derive"] }
+chrono = { version = "0.4.38", features = ["serde"] }
+nom = "8.0.0-alpha2"
+thiserror = "1.0.63"
+sled = "0.34.7"
+bincode = { version = "2.0.0-rc.3", features = ["serde"] }
+serde = { version = "1.0.204", features = ["derive"] }
+tabled = "0.16.0"
+inquire = "0.7.5"
+shlex = "1.3.0"
+
+[dev-dependencies]
+tempfile = "3.12.0"
